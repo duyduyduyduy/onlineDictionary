@@ -17,4 +17,4 @@ Default UI:
 ![App Screenshot](https://github.com/duyduyduyduy/onlineDictionary/blob/main/Default%20Image.png)
 
 Search UI: 
-![App Screenshot](https://github.com/duyduyduyduy/onlineDictionary/blob/main/Default%20Image.png)
+![App Screenshot](https://github.com/duyduyduyduy/onlineDictionary/blob/main/Search%20UI.png)
