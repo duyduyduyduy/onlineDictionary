@@ -1,0 +1,122 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Dictionary</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./loader.css" />
+    <script
+      src="https://kit.fontawesome.com/a68eed13c8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="searchcontainer">
+      <input
+        onkeyup="handleOnKeyUp(event)"
+        id="searchvalue"
+        placeholder="Search Oxford Advanced Learner's Dictionary"
+      />
+      <button onclick="RenderData()" style="color: white">Search</button>
+    </div>
+    <!-- Banner area -->
+    <div id="bannercontainer" style="font-family: sans-serif">
+      <div class="lefthand">
+        <div class="lefthandcontent">
+          <div style="width: 450px">
+            <h2 style="font-size: 15px; color: #0b295d">
+              NEW words and meanings added: September 2022
+            </h2>
+            <p style="margin-top: 10px">
+              More new words and meanings have been added to
+              <i>Oxford Advanced Learner’s Dictionary online.</i>
+            </p>
+            <p style="margin-top: 10px">
+              This time the main themes are business and technology, from
+              <span style="color: #004aac; font-weight: bolder"
+                >corporate culture</span
+              >
+              to
+              <span style="color: #004aac; font-weight: bolder"
+                >hybrid working</span
+              >
+              , from the C-suite to the digital nomad. Is it time to focus on
+              your
+              <span style="color: #004aac; font-weight: bolder"
+                >core competency</span
+              >
+              or to embrace the
+              <span style="color: #004aac; font-weight: bolder"
+                >new economy?</span
+              >
+            </p>
+            <p style="margin-top: 10px">
+              Along with an excursion into Korean culture (bibimbap, hanbok, the
+              Korean wave and more), here are 90+ words and expressions to add
+              to your watch list.
+            </p>
+          </div>
+          <img
+            width="208.53px"
+            height="208.53px"
+            src="https://dtcfza6z1c8xn.cloudfront.net/OLD_new_words_2022-09.png
+          "
+          />
+        </div>
+      </div>
+      <div class="righthand">
+        <div class="righthandcontent">
+          <p
+            style="font-weight: bolder; text-align: center; font-size: 18px"
+            id="Date"
+          ></p>
+          <h1 style="text-align: center; margin-top: 40px">analysis</h1>
+          <p style="text-align: center; font-size: 18px; margin-top: 10px">
+            noun
+          </p>
+          <p style="text-align: center; margin-top: 30px">From the word list</p>
+          <div
+            style="
+              width: 100%;
+              margin-top: 20px;
+              display: flex;
+              justify-content: center;
+            "
+          >
+            <button
+              style="
+                width: 80%;
+                background-color: #7c377b;
+                color: white;
+                border: none;
+                outline: none;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-radius: 33px;
+                cursor: pointer;
+                font-weight: bolder;
+              "
+              onclick="handleOnClickHomePage()"
+            >
+              Start to search this word
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="mainSize">
+        <h1 style="color: #1a3561" id="title"></h1>
+        <p style="margin-bottom: 10px; margin-top: 5px" id="pronouce"></p>
+        <div id="audio" style="margin-bottom: 5px"></div>
+
+        <!-- render meaning -->
+        <div id="meaningContainer"></div>
+        <div id="loader"></div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+    <script src="./timing.js"></script>
+  </body>
+</html>
